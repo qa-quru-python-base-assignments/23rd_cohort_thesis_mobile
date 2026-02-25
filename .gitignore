@@ -1,0 +1,82 @@
+# --- Python Core ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+.venv
+env/
+venv/
+ENV/
+
+# --- Environment Variables (Secrets) ---
+# CRITICAL: Never commit API keys, DB passwords, or cloud credentials
+.env.*
+# Keep .env.example or .env.template to share the structure
+!.env.example
+!.env.template
+
+# --- Testing Frameworks (Pytest) ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# --- Reporting (Allure, XML, HTML) ---
+# Test results and generated reports
+allure-results/
+allure-report/
+test-results/
+reports/
+assets/
+junit.xml
+
+# --- Logs ---
+*.log
+logs/
+
+# --- UI Automation (Web) ---
+# Videos from failed tests (Selene, Playwright, Selenium)
+videos/
+test-artifacts/
+# Browser driver logs
+geckodriver.log
+chromedriver.log
+msedgedriver.log
+
+# --- Mobile Automation (Appium/iOS/Android) ---
+# Appium server logs
+appium.log
+appium-*.log
+
+# Mobile Binaries (Do not commit the app build itself)
+*.apk
+*.apks
+*.aab
+*.ipa
+*.app
+*.zip
+
+# Allow APKs in resources (needed for tests)
+!resources/apks/*.apk
+
+# --- Generated/Downloaded ---
+generated/
+downloads/
+
+# --- IDE Settings (Local configs) ---
+# JetBrains (PyCharm)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# --- OS Specific ---
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
